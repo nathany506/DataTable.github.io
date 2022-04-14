@@ -101,7 +101,11 @@
             #grid {
                 
             }
-            
+            #credit {
+                color: white;
+                font-family: "Brush Script MT", cursive;
+                font-size: 25px;
+            }
             /*
             [{src:"meme1.jpg",w:"30%",h:"40%"},{src:"meme2.png",w:"30%",h:"40%"},{src:"meme3.png",w:"25%",h:"40%"},{src:"meme4.png",w:"25%",h:"%"},{src:"meme5.png",w:"25%",h:"%"},{src:"meme6.png",w:"25%",h:"%"},{src:"meme7.png",w:"25%",h:"%"},{src:"meme8.png",w:"25%",h:"%"},{src:"meme9.png",w:"39%",h:"%"},{src:"meme10.png",w:"35%",h:"%"},{src:"meme11.png",w:"15%",h:"%"},]
             */
@@ -150,6 +154,7 @@
         <button id="button" onclick="boring()">Boring Mode</button>
             <button id="buttonCool" onclick="cool()">Style Mode</button>
             </div>
+        <h4 id="credit">By Nathan Yang, Eric Yang, Allan and Jason</h4>
     </body>
     <script>
         
@@ -168,6 +173,7 @@
         let whites = document.getElementsByClassName('white')
         let buttonCool = document.getElementById('buttonCool')
         let image = document.getElementById("meme")
+        let credit = document.getElementById("credit")
         //td.style.color = "red"; doesn't work? try splitting this
         function changeDataColour() {
         for (let i =0;i<td.length;i++) {
@@ -207,6 +213,7 @@
             table.style.height = "60%";
             table.style.display = "table"
             image.style.display = "none";
+            credit.style.color = "black";
             body.style.backgroundImage = "none";
             body.style.backgroundColor = "white";
             
@@ -249,6 +256,7 @@
             table.style.borderColor = "red"
             table.style.borderRadius = "5px"
             image.style.display = "inline-block";
+             credit.style.color = "white";
             for (let i=0;i<whites.length;i++) {
                 whites[i].style.color = "white"
             }
